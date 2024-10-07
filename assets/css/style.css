@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* header section starts  */
+
+a {
+  text-decoration: none;
+}
+
+.h-content {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 25px #ccc;
+}
+
+nav ul {
+  margin: 0;
+}
+
+.logo img {
+  height: 60px;
+  border-radius: 10px;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(252, 246, 246);
+  border-radius: 50%;
+}
+
+/* imp-work page1 */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.imp-work {
+  background-color: rgb(245, 238, 238);
+  overflow: hidden;
+}
+
+.slider-head {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+
+.slider-head::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  border-bottom: 5px solid rgb(128, 108, 39);
+  width: 50%;
+  border-radius: 5px;
+}
+
+.product-info,
+.slider-head {
+  display: block;
+  text-align: left;
+}
+
+.Discover {
+  color: green;
+  font-size: 20px;
+  transition: all linear 0.5s;
+  float: left;
+}
+
+.Discover:hover,
+.aboutus-btn:hover {
+  border-bottom: 1px solid green;
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+
+/* slider end area  */
+
+.slider-statement {
+  min-height: 37vh;
+  align-items: center;
+  display: flex;
+}
+
+.aboutus-btn {
+  color: green;
+  font-size: 20px;
+  transition: all linear 0.5s;
+}
+
+/* <!-- product information and price tag   --> */
+
+.porduct {
+  margin: 10% 0;
+}
+
+/* buy now button  */
+.product-buy-btn {
+  width: 150px;
+  padding: 0;
+  border: none;
+  transform: rotate(5deg);
+  transform-origin: center;
+  font-family: 'Gochi Hand', cursive;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #b6c1cc;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #101f17;
+}
+
+.product-buy-btn span a {
+  background: #f5f8fa;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #7e8082;
+  color: black;
+}
+
+.product-buy-btn:active {
+  transform: translateY(5px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+/* best selling  */
+
+/* slider  */
+
+.swiper {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bs-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bs-img-container img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.quick-view,
+.add-to-cart,
+.add-to-fav {
+  padding: 5px;
+  border-radius: 20%;
+  background-color: white;
+  border: 0;
+  position: absolute;
+  display: none;
+  transform: translate(-50%, -50%); /* Center the buttons */
+}
+
+.bs-img-container:hover .quick-view {
+  top: 50%;
+  left: 25%;
+  display: block;
+}
+
+.bs-img-container:hover .add-to-cart {
+  top: 50%;
+  left: 50%;
+  display: block;
+}
+
+.bs-img-container:hover .add-to-fav {
+  top: 50%;
+  left: 75%;
+  display: block;
+}
+
+.bs-pro-detail {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 2% 0%;
+}
+
+.bs-pro-detail p {
+  padding: 0;
+  margin: 0;
+}
+
+.bs-pro-detail span {
+  font-size: 1.5rem;
+  margin: 1% 0%;
+}
+
+/* discount through email section  */
+
+.Email-sec {
+  margin: 10%;
+}
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background-color: #f4f5f7;
+}
+
+.newsletter-left p {
+  margin: 0;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.email-input {
+  position: relative;
+}
+
+.email-input input[type='email'] {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-right: 40px;
+}
+
+.email-input button {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.email-input button i {
+  color: #007bff;
+  font-size: 18px;
+}
+
+.email-input button:hover i {
+  color: #0056b3;
+}
+
+
+/* footer section  */
+.footer-section h3 {
+  color: #333;
+}
+
+.footer-section p {
+  color: #666;
+}
+
+.footer-section ul li a {
+  color: #666;
+}
+
+.footer-section ul li a:hover {
+  color: #333;
+}
+
+.email-input input[type="email"] {
+  border-radius: 5px;
+}
+
+.email-input button {
+  border-radius: 5px;
+}
+
+.email-input button i {
+  color: #fff;
+}
+
+.email-input button:hover i {
+  color: #fff;
+}
